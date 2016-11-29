@@ -18,7 +18,7 @@ logging:
 spring: # <---NEW SECTION
   cloud:
     services:
-      registrationMethod: direct #route
+      registrationMethod: route #direct
 
 ribbon: # <---NEW SECTION
   IsSecure: false
