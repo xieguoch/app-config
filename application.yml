@@ -11,7 +11,9 @@ logging:
     io:
       pivotal: DEBUG
     com:
-      netflix: OFF
+      netflix:
+        eureka: OFF
+        discovery: OFF
 
 spring: # <---NEW SECTION
   cloud:
