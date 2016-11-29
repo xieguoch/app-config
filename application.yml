@@ -14,11 +14,11 @@ logging:
 spring: # <---NEW SECTION
   cloud:
     services:
-      registrationMethod: direct #route
+      registrationMethod: route #direct
 
 ribbon: # <---NEW SECTION
   IsSecure: false
 
-spring:
-  rabbitmq:
-    addresses: ${vcap.services.cloud-bus.credentials.http_api_uris:http://localhost:5672}
+#spring:
+#  rabbitmq:
+#    addresses: ${vcap.services.cloud-bus.credentials.http_api_uris:http://localhost:5672}
