@@ -18,3 +18,7 @@ spring: # <---NEW SECTION
 
 ribbon: # <---NEW SECTION
   IsSecure: false
+
+spring:
+  rabbitmq:
+    addresses: ${vcap.services.cloud-bus.credentials.http_api_uris:http://localhost:5672}
